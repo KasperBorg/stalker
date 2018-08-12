@@ -79,7 +79,6 @@ def generate_permutations():
             alphaNum = True
 
     for word, pos in textblob.tags:
-        print pos + "\t" + word
         if pos == 'NNS' or pos == 'NN' or pos == 'NNP':
             if textblob.words.count(word, case_sensitive=False) >= args.frequency:
                 if alphaNum:
@@ -101,8 +100,6 @@ def generate_permutations():
     permutations = []
 
     for i in range(args.permutations):
-        print i+1
-
         permutations += map("".join, itertools.product(chosen_words, repeat=i+1))
 
     return map("".join, permutations)
