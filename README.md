@@ -1,4 +1,4 @@
-# stalker
+# Stalker v1.0
 Python script that extracts all nouns from a block of text, then permutates them into a wordlist
 
 ```
@@ -29,3 +29,7 @@ example usage:
 			./stalker.py -i input.txt -o output.txt -p 2 -f 1
 			./stalker.py -i input.txt -o output.txt -p 2 -f 1 -m 1 4
 ```
+
+# FAQ
+If you get errors sayings things like: `Looks like you are missing some required data for this feature.` or `Resource punkt not found. Please use the NLTK Downloader to obtain the resource`. Run the following command in your terminal:
+`python -m textblob.download_corpora`
