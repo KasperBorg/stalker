@@ -17,7 +17,7 @@ def get_parser():
 			./stalker.py -i input.txt -o output.txt -p 2 -f 1
 			./stalker.py -i input.txt -o output.txt -p 2 -f 1 -m 1 4'''
 
-    description = '''description: Permutates a block og text into a wordlist'''
+    description = '''description: Extracts all nouns from a block of text, then permutates them into a wordlist'''
 
     parser = argparse.ArgumentParser(formatter_class=RawTextHelpFormatter, epilog=example_text, description=description)
     parser.add_argument('-i', '--input', required=True, help="File containing the data to be converted")
